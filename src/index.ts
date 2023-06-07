@@ -6,11 +6,17 @@ import { commands, loadCommands } from './commands';
 // Initialize our client
 export const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
+// Check mode Argv
+const modeArg = process.argv.find((arg) => arg.startsWith('mode='));
+
 /** Our application main entry point, initializes the
  * application and logs in to our client */
 export const main = async (): Promise<void> => {
   // Load our commands!
   loadCommands();
+
+  // Exit before initializing listeners in test mode
+  if ((modeArg?.endsWith('test')) ?? false) process.exit(1);
 
   // Log in to Discord with your client's token
   await client
