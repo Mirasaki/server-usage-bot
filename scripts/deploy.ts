@@ -32,6 +32,7 @@ void (async () => {
 
     // Notify finish, success
     console.log(`Successfully reloaded ${commandData.length} ${cmdInfoStr}.`);
+    process.exit(0);
   } catch (error) {
     console.error(`Error encountered while registering ${cmdInfoStr}:`);
     console.error(error);
