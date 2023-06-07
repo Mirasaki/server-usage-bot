@@ -1,7 +1,7 @@
 # server-usage-bot
 
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-![build](https://img.shields.io/github/actions/workflow/status/Mirasaki/server-usage-bot/test.yml?branch=main)
+![build](https://img.shields.io/github/actions/workflow/status/mirasaki/server-usage-bot/test.yml?branch=dev)
 [![CodeFactor](https://www.codefactor.io/repository/github/mirasaki/server-usage-bot/badge)](https://www.codefactor.io/repository/github/mirasaki/server-usage-bot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Docker Pulls](https://img.shields.io/docker/pulls/mirasaki/server-usage-bot)
