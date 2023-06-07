@@ -4,6 +4,7 @@
   "description": "A Discord bot that display performance statistics for your dedicated server/PC",
   "main": "dist/src/index.js",
   "scripts": {
+    "deploy": "ts-node scripts/deploy",
     "start": "node .",
     "test": "node . mode=test",
     "build": "tsc -p .",

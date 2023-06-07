@@ -64,6 +64,7 @@ The quickest and easiest way to host/use this bot is by deploying it inside of a
 4. Build the application: `npm run build`
 5. Build the Docker image: `docker build --tag my-server-usage-bot .`
 6. Start the bot: `docker run -it --env-file .env --name my-server-usage-bot mirasaki/server-usage-bot:main`
+7. Deploy application/slash commands: `npm run deploy`
 
 ### Run as a plain NodeJS app
 
@@ -77,7 +78,8 @@ You can also clone this repository or download a release, and host the project d
 5. Run `npm install --exclude=dev` to install all dependencies
 6. Rename [`/.env.example`](/.env.example "View .env.example file in current repository") to `.env` and configure your environmental variables
 7. Build the application: `npm run build`
-8. Use the command `node .` to start the application, or alternatively:
+8. Deploy application/slash commands: `npm run deploy`
+9. Use the command `node .` to start the application, or alternatively:
     - `npm run start` to keep the process alive with [PM2](https://pm2.io/ "PM2 | Official Website"), suitable for production environments. (`npm i -g pm2` to install)
     - `npm run dev` if you have `nodemon` installed for automatic restarts on changes, suitable for development environments
 
