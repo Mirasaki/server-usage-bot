@@ -1,5 +1,12 @@
 # server-usage-bot
 
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+![build](https://img.shields.io/github/actions/workflow/status/Mirasaki/server-usage-bot/test.yml?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/mirasaki/server-usage-bot/badge)](https://www.codefactor.io/repository/github/mirasaki/server-usage-bot)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Docker Pulls](https://img.shields.io/docker/pulls/mirasaki/server-usage-bot)
+![version](https://img.shields.io/github/v/release/Mirasaki/server-usage-bot)
+
 A Discord bot that display performance statistics for your dedicated server/PC
 
 ![usage](./assets/usage.png)
