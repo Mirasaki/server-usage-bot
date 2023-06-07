@@ -16,7 +16,7 @@ export const main = async (): Promise<void> => {
   loadCommands();
 
   // Exit before initializing listeners in test mode
-  if ((modeArg?.endsWith('test')) ?? false) process.exit(1);
+  if ((modeArg?.endsWith('test')) ?? false) process.exit(0);
 
   // Log in to Discord with your client's token
   await client
