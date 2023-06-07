@@ -7,7 +7,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/mirasaki/server-usage-bot)
 ![version](https://img.shields.io/github/v/release/Mirasaki/server-usage-bot)
 
-A Discord bot that display performance statistics for your dedicated server/PC
+A Discord bot that display performance statistics for your dedicated server/PC. Uses [CloudFlare Speed Test](https://speed.cloudflare.com/) for networks statistics. For Linux, macOS, partial Windows, FreeBSD, OpenBSD, NetBSD, SunOS and Android. Dependency free.
 
 ![usage](./assets/usage.png)
 ![specs](./assets/specs.png)
