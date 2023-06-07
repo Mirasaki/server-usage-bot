@@ -7,7 +7,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/mirasaki/server-usage-bot)
 ![version](https://img.shields.io/github/v/release/Mirasaki/server-usage-bot)
 
-A Discord bot that display performance statistics for your dedicated server/PC. Uses [CloudFlare Speed Test](https://speed.cloudflare.com/) for networks statistics. For Linux, macOS, partial Windows, FreeBSD, OpenBSD, NetBSD, SunOS and Android. Minimal dependencies.
+A Discord bot that display performance statistics for your dedicated server/PC. Uses [CloudFlare Speed Test](https://speed.cloudflare.com/) for networks statistics. Supports Linux, macOS, partial Windows, FreeBSD, OpenBSD, NetBSD, SunOS and Android. Minimal dependencies.
 
 ![usage](./assets/usage.png)
 ![specs](./assets/specs.png)
@@ -63,7 +63,7 @@ The quickest and easiest way to host/use this bot is by deploying it inside of a
     - Windows users often experience issues with this file, if you're getting errors that the env file can't be found, or `Expected path argument to be of type string` - check out [this timestamped video](https://youtu.be/6rOCUZ8opLM?t=42)
 4. Build the application: `npm run build`
 5. Build the Docker image: `docker build --tag my-server-usage-bot .`
-6. Start the bot: `docker run -it --env-file .env --name my-server-usage-bot mirasaki/server-usage-bot:main`
+6. Start the bot: `docker run -it --env-file .env my-server-usage-bot`
 7. Deploy application/slash commands: `npm run deploy`
 
 ### Run as a plain NodeJS app
