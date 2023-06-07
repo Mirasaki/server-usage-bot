@@ -67,7 +67,7 @@ You can also clone this repository or download a release, and host the project d
 2. Download either the `zip` or `zip.gz` source code
 3. Extract it using [your favorite zip tool](https://www.rarlab.com/download.htm "It's WinRar, duh")
 4. Open a new console/terminal/shell window in the newly created project folder
-5. Run `npm install` to install all dependencies
+5. Run `npm install --exclude=dev` to install all dependencies
 6. Rename [`/.env.example`](/.env.example "View .env.example file in current repository") to `.env` and configure your environmental variables
 7. Build the application: `npm run build`
 8. Use the command `node .` to start the application, or alternatively:
