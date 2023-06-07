@@ -1,0 +1,65 @@
+{
+  "name": "server-usage-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that display performance statistics for your dedicated server/PC",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "build": "tsc -p .",
+    "dev": "nodemon src/index.ts",
+    "docker:build": "docker build --tag server-usage-bot .",
+    "docker:shell": "docker run -it --rm server-usage-bot sh",
+    "docker:start": "docker run -it --env-file ./.env -d --name server-usage-bot server-usage-bot",
+    "docker:restart": "docker restart server-usage-bot",
+    "docker:stop": "docker stop server-usage-bot",
+    "docker:kill": "docker rm -f server-usage-bot",
+    "docker:purge": "docker rm -fv server-usage-bot",
+    "docker:logs": "docker logs server-usage-bot -f",
+    "docker:image": "docker image tag server-usage-bot mirasaki/server-usage-bot",
+    "docker:push": "docker push mirasaki/server-usage-bot",
+    "docker:dev:build": "docker build --tag server-usage-bot-dev -f development.Dockerfile .",
+    "docker:dev:start": "docker run -it --rm -v $(pwd):/app -v /app/node_modules -p 9229:9229 -w /app server-usage-bot-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirasaki/server-usage-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord-bot",
+    "performance",
+    "server-usage",
+    "cpu-usage",
+    "ram-usage",
+    "network-speed",
+    "internet-speed"
+  ],
+  "author": "Richard Hillebrand (Mirasaki)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mirasaki/server-usage-bot/issues"
+  },
+  "homepage": "https://github.com/Mirasaki/server-usage-bot#readme",
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.1.4",
+    "speed-cf": "^3.0.0",
+    "systeminformation": "^5.18.1"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.1",
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "eslint": "^8.42.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}

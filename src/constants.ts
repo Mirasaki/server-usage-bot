@@ -1,0 +1,30 @@
+export const EMBED_MAX_FIELDS_LENGTH = 25;
+export const EMBED_MAX_CHARACTER_LENGTH = 6000;
+export const EMBED_TITLE_MAX_LENGTH = 256;
+export const EMBED_DESCRIPTION_MAX_LENGTH = 4096;
+export const EMBED_FIELD_NAME_MAX_LENGTH = 256;
+export const EMBED_FIELD_VALUE_MAX_LENGTH = 1024;
+export const EMBED_FOOTER_TEXT_MAX_LENGTH = 2048;
+export const EMBED_AUTHOR_NAME_MAX_LENGTH = 256;
+
+export const MESSAGE_CONTENT_MAX_LENGTH = 2000;
+export const SELECT_MENU_MAX_OPTIONS = 25;
+export const AUTOCOMPLETE_MAX_DATA_OPTIONS = 25;
+
+export const BYTES_IN_KIB = 1024;
+export const BYTES_IN_MIB = 1048576;
+export const BYTES_IN_GIB = 1073741824;
+
+export const NS_IN_ONE_MS = 1000000;
+export const NS_IN_ONE_SECOND = 1000000000;
+
+export const MS_IN_ONE_SECOND = 1000;
+export const MS_IN_ONE_MINUTE = 60000;
+export const MS_IN_ONE_HOUR = 3600000;
+export const MS_IN_ONE_DAY = 86400000;
+
+export const SECONDS_IN_ONE_MINUTE = 60;
+export const MINUTES_IN_ONE_HOUR = 60;
+export const HOURS_IN_ONE_DAY = 24;
+
+export const DEFAULT_DECIMAL_PRECISION = 2;
