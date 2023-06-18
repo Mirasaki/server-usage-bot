@@ -62,7 +62,7 @@ const pingCommand = new SlashCommand({
         new EmbedBuilder()
           .setColor(Colors.Aqua)
           .setAuthor({
-            name: `${client.user.tag}`,
+            name: `${client.user.username}`,
             iconURL: client.user.displayAvatarURL()
           })
           .addFields([
