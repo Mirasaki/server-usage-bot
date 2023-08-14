@@ -45,7 +45,7 @@
   "homepage": "https://github.com/Mirasaki/server-usage-bot#readme",
   "dependencies": {
     "common-tags": "^1.8.2",
-    "discord.js": "^14.11.0",
+    "discord.js": "^14.12.1",
     "dotenv": "^16.3.1",
     "speed-cf": "^3.0.0",
     "systeminformation": "^5.18.7"
