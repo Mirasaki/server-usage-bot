@@ -48,7 +48,7 @@
     "discord.js": "^14.13.0",
     "dotenv": "^16.3.1",
     "speed-cf": "^3.0.0",
-    "systeminformation": "^5.18.15"
+    "systeminformation": "^5.21.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
